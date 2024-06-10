@@ -2,6 +2,15 @@ diff --git a/launcher/ui/pages/global/AccountListPage.cpp b/launcher/ui/pages/gl
 index 278f45c495..8c4e848bb6 100644
 --- a/launcher/ui/pages/global/AccountListPage.cpp
 +++ b/launcher/ui/pages/global/AccountListPage.cpp
+@@ -65,7 +65,7 @@ AccountListPage::AccountListPage(QWidget *parent)
+     ui->setupUi(this);
+     ui->listView->setEmptyString(tr(
+         "Welcome!\n"
+-        "If you're new here, you can click the \"Add\" button to add your Mojang or Minecraft account."
++        "If you're new here, you can click the \"Add\" button to add an account."
+     ));
+     ui->listView->setEmptyMode(VersionListView::String);
+     ui->listView->setContextMenuPolicy(Qt::CustomContextMenu);
 @@ -188,19 +188,6 @@ void AccountListPage::on_actionAddMicrosoft_triggered()
  
  void AccountListPage::on_actionAddOffline_triggered()
