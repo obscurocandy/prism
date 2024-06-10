@@ -1,7 +1,6 @@
 name: Build Application
 
-on:
-  workflow_call:
+on: workflow_dispatch
 
 jobs:
   latest_release:
