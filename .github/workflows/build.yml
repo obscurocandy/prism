@@ -126,6 +126,11 @@ jobs:
       HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK: 1
 
     steps:
+      - name: Fix line endings
+        if: runner.os == 'Windows'
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       ##
       # PREPARE
       ##
@@ -135,12 +140,6 @@ jobs:
           repository: 'PrismLauncher/PrismLauncher'
           ref: ${{ inputs.checkout_ref }}
           submodules: "true"
-
-      - name: Fix line endings
-        if: runner.os == 'Windows'
-        run: |
-          git config --global core.autocrlf false
-          git config --global core.eol lf
 
       - name: Checkout buildrepo
         uses: actions/checkout@v4
