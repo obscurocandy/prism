@@ -16,3 +16,4 @@ index 8d0b66004..48da859a3 100644
 -
      MinecraftAccountPtr account =
          OfflineLoginDialog::newAccount(this, tr("Please enter your desired username to add your offline account."));
+
