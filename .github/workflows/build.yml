@@ -10,7 +10,7 @@ on:
       is_qt_cached:
         description: Enable Qt caching or not
         type: string
-        default: true
+        default: 'true'
       checkout_ref:
         description: Ref (tag/commit/branch) to checkout and build
         type: string

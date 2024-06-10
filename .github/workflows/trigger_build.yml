@@ -5,6 +5,7 @@ on:
 
 jobs:
   latest_release:
+    runs-on: ubuntu-22.04
     outputs:
       tag: ${{ steps.get_latest_release.outputs.tag_name }}
     steps:
