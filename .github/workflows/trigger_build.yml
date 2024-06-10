@@ -25,6 +25,6 @@ jobs:
     with:
       build_type: Release
       is_qt_cached: false
-      ref: ${{ needs.latest_release.outputs.tag }}
+      checkout_ref: ${{ needs.latest_release.outputs.tag }}
 
   
